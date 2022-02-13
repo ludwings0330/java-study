@@ -19,7 +19,9 @@ public class EnumExample {
         };
 
         protected final int BASIC_FARE;
-
+        private Transportation(int fare) {
+            this.BASIC_FARE = fare;
+        }
         abstract int getFare(int distance);
 
         public int getBasicFare() {
