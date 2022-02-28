@@ -23,7 +23,7 @@ public class GenericExample {
         System.out.println("item = " + item);
     }
 
-    private static class Apple {
+    private static class Apple extends Fruit {
     }
 
     private static class FruitBox<T extends Fruit> { // Fruit의 자손만 타입으로 지정가능
